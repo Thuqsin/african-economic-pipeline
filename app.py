@@ -36,7 +36,7 @@ st.markdown("""
 # Supabase connection
 @st.cache_resource
 def init_supabase():
-    SUPABASE_URL = st.secrets["https://lglcfjjqdqtthjbrkuei.supabase.co/rest/v1/"]
+    SUPABASE_URL = st.secrets["https://lglcfjjqdqtthjbrkuei.supabase.co"]
     SUPABASE_KEY = st.secrets["sb_secret_J41IuV2ScauA8AExyZetkA_ZFgVjxxt"]
     return create_client(SUPABASE_URL, SUPABASE_KEY)
 @st.cache_data(ttl=3600)
